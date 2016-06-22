@@ -1,11 +1,10 @@
 var app = angular.module('kodofisi.controller',[]);
 
-app.controller("formCtrl", function ($scope) {
-   $scope.form = {
-   	url : ""
-   };
-   $scope.formgoster = function (data) {
-   	console.log(data);
-   	$scope.form.url= ""
-   };
+app.controller("dashCtrl", function ($scope, AjaxServ) {
+    $scope.form = {
+   	    url : ""
+    };
+    $scope.getVideo = function (data) {
+   	    AjaxServ.getVideo({asd : "dsasd"})
+    };
 });
