@@ -1,1 +1,1 @@
-var app = angular.module('kodofisi',['kodofisi.service','kodofisi.controller']);
+var app = angular.module('avarekodcu',['avarekodcu.service','avarekodcu.controller']);

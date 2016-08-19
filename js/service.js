@@ -1,4 +1,4 @@
-var app = angular.module('kodofisi.service',[]);
+var app = angular.module('avarekodcu.service',[]);
 
 app.service('AjaxServ', function ($http, $httpParamSerializerJQLike) {
     var result = function (data) {

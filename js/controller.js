@@ -1,4 +1,4 @@
-var app = angular.module('kodofisi.controller',[]);
+var app = angular.module('avarekodcu.controller',[]);
 
 app.controller("dashCtrl", function ($scope, AjaxServ) {
     $scope.form = {
