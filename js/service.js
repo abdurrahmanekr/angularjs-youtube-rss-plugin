@@ -5,7 +5,11 @@ app.service('AjaxServ', function ($http, $httpParamSerializerJQLike) {
 
         $http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
 
-        var promise = $http.post("http://localhost/http/index.php", $httpParamSerializerJQLike(data)).then(function (response) {
+        var promise = $http({
+                                url: "http://localhost/api.php",
+                                method: "GET",
+                                params: { channel_id: data }
+                            }).then(function (response) {
             return response.data;
         } , function (response) {
             return false;

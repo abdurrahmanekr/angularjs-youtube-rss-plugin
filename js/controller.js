@@ -5,6 +5,8 @@ app.controller("dashCtrl", function ($scope, AjaxServ) {
    	    url : ""
     };
     $scope.getVideo = function (data) {
-   	    AjaxServ.getVideo({asd : "dsasd"})
+   	    AjaxServ.getVideo(data.url).then(function (res) {
+   	    	console.log(res);
+   	    });
     };
 });
